@@ -19,6 +19,7 @@ react-masked-input requires **React 16.8.0 or later.**
 ### `Separators`
 
 You can use lots of type separators. But you can't use #, a, \* for separating. Also you can use static values.
+Also you can use as react hook. Only import {useInputMask} and use like below examples.
 
 |     Examples      |     Responses     |
 | :---------------: | :---------------: |
@@ -29,15 +30,18 @@ You can use lots of type separators. But you can't use #, a, \* for separating. 
 
 ```jsx
 import React from "react";
-import MaskedInput from "./react-masked-input";
+import MaskedInput, { useInputMask } from "./react-masked-input";
 import "./App.css";
 import { TextField } from "@mui/material";
 import { useForm } from "react-hook-form";
 
 function App() {
+  const maskedText = useInputMask();
   const [value, setValue] = React.useState("");
   const [timeFormat, setTimeFormat] = React.useState("");
   const [date, setDate] = React.useState("");
+
+  console.log(maskedText("+90 (###) ### ####", "5555555555")); // +90 (555) 555 55 55
 
   return (
     <>
