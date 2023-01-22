@@ -7,7 +7,7 @@ const MaskedInput = React.forwardRef((props, ref) => {
   const maskedText = useInputMask();
 
   return (
-    <>
+    <div>
       {children &&
         cloneElement(props.children, {
           ...others,
@@ -32,7 +32,7 @@ const MaskedInput = React.forwardRef((props, ref) => {
           }}
         ></input>
       )}
-    </>
+    </div>
   );
 });
 
