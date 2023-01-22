@@ -1,0 +1,34 @@
+{
+  "name": "react-masked-input",
+  "version": "1.0.1",
+  "description": "Masked for react input elements. The package support input and TextField(mui) elements cc, iban, date, phone and generic types. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mahiraltinkaya/react-masked-input.git"
+  },
+  "keywords": [
+    "react",
+    "input",
+    "mask",
+    "masked",
+    "iban_mask",
+    "phone_mask"
+  ],
+  "author": {
+    "name": "Mahir Altınkaya",
+    "email": "mahiraltinkaya@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahiraltinkaya/react-masked-input/issues"
+  },
+  "homepage": "https://github.com/mahiraltinkaya/react-masked-input#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
