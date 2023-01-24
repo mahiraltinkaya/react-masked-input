@@ -1,6 +1,6 @@
 import React, { cloneElement } from "react";
 import useInputMask from "./hooks/useInputMask";
-import PropTypes from "prop-types";
+import { PropTypes } from "prop-types";
 
 const MaskedInput = React.forwardRef((props, ref) => {
   const { children, ...others } = props;

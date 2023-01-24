@@ -1,6 +1,6 @@
 {
   "name": "@mahiraltinkaya/react-masked-input",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "Masked for react input elements. The package support input and TextField(mui) elements cc, iban, date, phone and generic types. ",
   "main": "./build/index.js",
   "scripts": {
@@ -38,6 +38,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "autoprefixer": "10.4.5"
+    "autoprefixer": "10.4.5",
+    "prop-types": "^15.8.1"
   }
 }

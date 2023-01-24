@@ -1,32 +1,23 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+var path = require("path");
 
 module.exports = {
+  mode: "production",
   entry: "./src/index.js",
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve("build"),
+    filename: "index.js",
+    libraryTarget: "commonjs2",
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "public", "index.html"),
-    }),
-  ],
   module: {
-    // exclude node_modules
     rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       {
-        test: /\.(js|jsx)$/, // <-- added `|jsx` here
-        exclude: /node_modules/,
-        use: ["babel-loader"],
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
-  // pass all js files through Babel
-  resolve: {
-    extensions: ["*", ".js", ".jsx"], // <-- added `.jsx` here
-  },
-  stats: {
-    children: true,
+  externals: {
+    react: "react",
   },
 };

@@ -8,6 +8,8 @@ react-masked-input requires **React 16.8.0 or later.**
 
 `npm install @mahiraltinkaya/react-masked-input`
 
+# [Demos](https://fantastic-twilight-827f0d.netlify.app/)
+
 # Usage
 
 | Character | Allowed input |
@@ -40,6 +42,7 @@ function App() {
   const [value, setValue] = React.useState("");
   const [timeFormat, setTimeFormat] = React.useState("");
   const [date, setDate] = React.useState("");
+  const [iban, setIban] = React.useState("");
 
   console.log(maskedText("+90 (###) ### ####", "5555555555")); // +90 (555) 555 55 55
 
@@ -80,9 +83,9 @@ function App() {
 
         <MaskedInput
           mask="TR## #### #### #### #### #### ##"
-          value={date}
+          value={iban}
           placeholder={"TR16 9090 9090 9090 9090 9090 90"}
-          onChange={setDate}
+          onChange={setIban}
         ></MaskedInput>
       </div>
     </>
