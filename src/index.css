@@ -1,0 +1,78 @@
+.file__container {
+  width: 100%;
+  min-height: 250px;
+  border: 2px dashed #adadad;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.file__container .file_previews {
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.file__container .file_previews .preview {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px dashed #adadad;
+  margin: 5px;
+  border-radius: 10px;
+}
+.file__container .file_previews .preview button {
+  position: absolute;
+  background-color: white;
+  border: none;
+  right: 3px;
+  bottom: 0px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.file__container .file_previews .preview img {
+  width: 120px;
+  height: 100px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.file__container .dropzone {
+  width: 100%;
+  margin: 10px auto;
+}
+.file__container .dropzone .dropline {
+  pointer-events: none;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  border: 1px dashed #adadad;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+}
+.file__container .dropzone .dropline .information {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.file__container .dropzone .dropline .information:last-child {
+  font-size: 10px;
+}
+.file__container .file__input {
+  display: none;
+}
+
+.hightlight {
+  background-color: rgba(206, 246, 253, 0.454);
+} /*# sourceMappingURL=index.css.map */
